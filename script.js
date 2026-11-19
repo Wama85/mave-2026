@@ -5,7 +5,7 @@
 // 1) CAMBIA AQUÍ TU NÚMERO DE WHATSAPP
 //    Código de país + número, sin "+", espacios ni guiones.
 //    Ejemplo Bolivia: "59171234567"
-const WHATSAPP_NUMBER = "";
+const WHATSAPP_NUMBER = "59173788764";
 
 document.documentElement.classList.remove("no-js");
 
@@ -22,7 +22,7 @@ document.documentElement.classList.remove("no-js");
   });
 
   document.querySelectorAll(".js-wa-number").forEach((el) => {
-    el.textContent = number ? "+" + number : "[TU NÚMERO]";
+    el.textContent = number ? "+591 " + number.slice(3) : "[TU NÚMERO]";
   });
 })();
 
